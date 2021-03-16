@@ -33,24 +33,20 @@ namespace Lab2._2TableofPowers
                     Console.WriteLine("\n");
 
 
-
-                    if (num > 0)
+                    if (num > 0 && num <= 1860)
                     {
 
                         Console.WriteLine(" \t\tNumber    \t\tSquared     \t\tCubed");
                         Console.WriteLine(" \t\t=====      \t\t=====      \t\t=====");
                         for (int i = 1; i <= num; i++)
                         {
-
                             Console.WriteLine($"\t\t{i}        \t\t{i * i}         \t\t{i * i * i}");
-
 
                         }
                     }
                     else
                     {
-
-                        Console.WriteLine("Please enter a number greater than zero and not negative.");
+                        Console.WriteLine("Please enter a number greater than zero, not negative, and it is not greater than 1860.");
                     }
                     Console.WriteLine("\n");
                 }
@@ -62,7 +58,6 @@ namespace Lab2._2TableofPowers
                     Console.WriteLine("\n");
                 }
 
-
                 Console.WriteLine("Would you like to continue ? (y/n):");
                 string userInput = Console.ReadLine();
                 if(userInput.StartsWith("n", StringComparison.OrdinalIgnoreCase))
@@ -71,6 +66,11 @@ namespace Lab2._2TableofPowers
                     userContinue = false;
                     Console.WriteLine("Thank you! Have a nice day!");
 
+                }
+                else
+                {
+
+                    userContinue = true;
                 }
                 
             }
