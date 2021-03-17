@@ -33,7 +33,7 @@ namespace Lab2._2TableofPowers
                     Console.WriteLine("\n");
 
 
-                    if (num > 0 && num <= 1860)
+                    if (num > 0 && num <= 1290)
                     {
 
                         Console.WriteLine(" \t\tNumber    \t\tSquared     \t\tCubed");
@@ -46,7 +46,7 @@ namespace Lab2._2TableofPowers
                     }
                     else
                     {
-                        Console.WriteLine("Please enter a number greater than zero, not negative, and it is not greater than 1860.");
+                        Console.WriteLine("Please enter a number greater than zero, not negative, and it is not greater than 1290.");
                     }
                     Console.WriteLine("\n");
                 }
